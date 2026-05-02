@@ -85,7 +85,7 @@ export default function Catalogo({ onEditar }) {
         />
 
         <select value={campoOrden} onChange={handleOrdenar} className="selector-orden">
-          <option value="">— Ordenar por —</option>
+          <option value="">- Ordenar por -</option>
           <option value="titulo">Título (A–Z)</option>
           <option value="autor">Autor (A–Z)</option>
           <option value="anio">Año</option>

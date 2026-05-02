@@ -107,7 +107,7 @@ export default function FormularioLibro({ libro, onGuardado }) {
         <div className="campo">
           <label>Categoría *</label>
           <select name="categoria" value={form.categoria} onChange={handleChange}>
-            <option value="">— Seleccionar —</option>
+            <option value="">- Seleccionar -</option>
             {CATEGORIAS.map((c) => (
               <option key={c} value={c}>{c}</option>
             ))}
