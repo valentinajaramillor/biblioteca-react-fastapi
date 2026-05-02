@@ -1,0 +1,231 @@
+/* ─── RESET Y BASE ─────────────────────────────────────────────────────────── */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #f0f4f8;
+  color: #1a202c;
+  font-size: 15px;
+}
+
+/* ─── LAYOUT ────────────────────────────────────────────────────────────────── */
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+
+.header {
+  background: #1e3a5f;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.header h1 { font-size: 1.4rem; font-weight: 700; }
+
+.header nav { display: flex; gap: 0.5rem; }
+
+.header nav button {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.4);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.header nav button:hover { background: rgba(255,255,255,0.15); }
+.header nav button.activo {
+  background: white;
+  color: #1e3a5f;
+  border-color: white;
+  font-weight: 600;
+}
+
+.contenido {
+  max-width: 1100px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.contenido h2 { font-size: 1.3rem; margin-bottom: 1.2rem; color: #1e3a5f; }
+
+/* ─── MENSAJES ──────────────────────────────────────────────────────────────── */
+.mensaje {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.mensaje.ok { background: #d1fae5; color: #065f46; border: 1px solid #6ee7b7; }
+.mensaje.error { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+
+/* ─── CONTROLES (búsqueda + orden) ──────────────────────────────────────────── */
+.controles {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.barra-busqueda {
+  flex: 1;
+  min-width: 220px;
+  padding: 0.6rem 1rem;
+  border: 1.5px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.barra-busqueda:focus { border-color: #1e3a5f; }
+
+.selector-orden {
+  padding: 0.6rem 1rem;
+  border: 1.5px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: white;
+  cursor: pointer;
+  outline: none;
+}
+
+/* ─── TABLA ─────────────────────────────────────────────────────────────────── */
+.tabla-wrapper { overflow-x: auto; border-radius: 10px; box-shadow: 0 1px 6px rgba(0,0,0,0.1); }
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+.tabla th {
+  background: #1e3a5f;
+  color: white;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.tabla td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: middle;
+}
+.tabla tbody tr:hover { background: #f7fafc; }
+
+.badge {
+  background: #ebf4ff;
+  color: #1e4f9f;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.disponible { color: #065f46; font-weight: 600; }
+.no-disponible { color: #991b1b; font-weight: 600; }
+
+.btn-editar, .btn-eliminar {
+  padding: 0.3rem 0.75rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-right: 0.3rem;
+}
+.btn-editar { background: #dbeafe; color: #1e40af; }
+.btn-editar:hover { background: #bfdbfe; }
+.btn-eliminar { background: #fee2e2; color: #b91c1c; }
+.btn-eliminar:hover { background: #fecaca; }
+
+.total { margin-top: 0.8rem; font-size: 0.9rem; color: #718096; }
+.vacio { color: #718096; padding: 1rem 0; }
+
+/* ─── FORMULARIO ────────────────────────────────────────────────────────────── */
+.formulario {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  max-width: 600px;
+}
+
+.campo { margin-bottom: 1rem; }
+.campo label { display: block; font-weight: 600; margin-bottom: 0.3rem; color: #2d3748; font-size: 0.9rem; }
+.campo input, .campo select, .campo textarea {
+  width: 100%;
+  padding: 0.55rem 0.85rem;
+  border: 1.5px solid #cbd5e0;
+  border-radius: 7px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+.campo input:focus, .campo select:focus, .campo textarea:focus { border-color: #1e3a5f; }
+.campo-check label { display: flex; align-items: center; gap: 0.5rem; cursor: pointer; }
+.campo-check input { width: auto; }
+
+.botones-form { display: flex; gap: 0.75rem; margin-top: 1.5rem; }
+.btn-guardar {
+  background: #1e3a5f;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 7px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-guardar:hover { background: #162c48; }
+.btn-cancelar {
+  background: #e2e8f0;
+  color: #4a5568;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 7px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.btn-cancelar:hover { background: #cbd5e0; }
+
+/* ─── ÁRBOL ─────────────────────────────────────────────────────────────────── */
+.descripcion-algoritmo {
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #78350f;
+  line-height: 1.5;
+}
+
+.arbol { list-style: none; background: white; border-radius: 10px; box-shadow: 0 1px 6px rgba(0,0,0,0.1); padding: 1rem; }
+
+.nodo { padding: 0; }
+
+.nodo-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.5rem;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+.nodo-header:hover { background: #f7fafc; }
+
+.nivel-0 .nodo-nombre { font-size: 1.05rem; font-weight: 700; color: #1e3a5f; }
+.nivel-1 .nodo-nombre { font-weight: 600; color: #2d5282; }
+.nivel-2 .nodo-nombre, .nivel-3 .nodo-nombre { color: #4a5568; }
+
+.nodo-conteo { font-size: 0.8rem; color: #718096; background: #edf2f7; padding: 0.1rem 0.5rem; border-radius: 10px; }
+
+.icono-expand, .icono-hoja { font-size: 0.85rem; color: #718096; min-width: 16px; }
+
+.hijos { list-style: none; margin-left: 1.5rem; border-left: 2px solid #e2e8f0; padding-left: 0.5rem; }
