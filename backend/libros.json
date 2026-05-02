@@ -1,0 +1,252 @@
+[
+  {
+    "id": "1",
+    "titulo": "Introducción a los Algoritmos",
+    "autor": "Thomas H. Cormen",
+    "isbn": "978-0-262-03384-8",
+    "anio": 2009,
+    "categoria": "Algoritmos y Estructuras",
+    "disponibilidad": true,
+    "descripcion": "El libro de referencia más completo sobre algoritmos y estructuras de datos."
+  },
+  {
+    "id": "2",
+    "titulo": "Clean Code",
+    "autor": "Robert C. Martin",
+    "isbn": "978-0-13-235088-4",
+    "anio": 2008,
+    "categoria": "Programación",
+    "disponibilidad": true,
+    "descripcion": "Guía para escribir código limpio y mantenible."
+  },
+  {
+    "id": "3",
+    "titulo": "The Pragmatic Programmer",
+    "autor": "David Thomas",
+    "isbn": "978-0-13-595705-9",
+    "anio": 2019,
+    "categoria": "Programación",
+    "disponibilidad": false,
+    "descripcion": "Consejos prácticos para programadores profesionales."
+  },
+  {
+    "id": "4",
+    "titulo": "Learning React",
+    "autor": "Alex Banks",
+    "isbn": "978-1-492-05172-5",
+    "anio": 2020,
+    "categoria": "Desarrollo Web",
+    "disponibilidad": true,
+    "descripcion": "Guía completa para aprender React desde cero."
+  },
+  {
+    "id": "5",
+    "titulo": "JavaScript: The Good Parts",
+    "autor": "Douglas Crockford",
+    "isbn": "978-0-596-51774-8",
+    "anio": 2008,
+    "categoria": "Desarrollo Web",
+    "disponibilidad": true,
+    "descripcion": "Las partes esenciales del lenguaje JavaScript."
+  },
+  {
+    "id": "6",
+    "titulo": "Database System Concepts",
+    "autor": "Abraham Silberschatz",
+    "isbn": "978-0-07-352332-3",
+    "anio": 2019,
+    "categoria": "Bases de Datos",
+    "disponibilidad": false,
+    "descripcion": "Fundamentos completos de sistemas de bases de datos."
+  },
+  {
+    "id": "7",
+    "titulo": "SQL in 10 Minutes",
+    "autor": "Ben Forta",
+    "isbn": "978-0-13-581068-9",
+    "anio": 2020,
+    "categoria": "SQL",
+    "disponibilidad": true,
+    "descripcion": "Aprende SQL de forma rápida y práctica."
+  },
+  {
+    "id": "8",
+    "titulo": "MongoDB: The Definitive Guide",
+    "autor": "Shannon Bradshaw",
+    "isbn": "978-1-491-95446-1",
+    "anio": 2019,
+    "categoria": "NoSQL",
+    "disponibilidad": true,
+    "descripcion": "Guía definitiva para trabajar con MongoDB."
+  },
+  {
+    "id": "9",
+    "titulo": "Computer Networks",
+    "autor": "Andrew S. Tanenbaum",
+    "isbn": "978-0-13-212695-3",
+    "anio": 2011,
+    "categoria": "Redes",
+    "disponibilidad": true,
+    "descripcion": "El texto clásico sobre redes de computadores."
+  },
+  {
+    "id": "10",
+    "titulo": "Cálculo: Trascendentes Tempranas",
+    "autor": "James Stewart",
+    "isbn": "978-1-285-74155-0",
+    "anio": 2015,
+    "categoria": "Matemáticas",
+    "disponibilidad": false,
+    "descripcion": "Cálculo diferencial e integral con aplicaciones."
+  },
+  {
+    "id": "11",
+    "titulo": "Álgebra Lineal y sus Aplicaciones",
+    "autor": "David C. Lay",
+    "isbn": "978-0-321-98238-4",
+    "anio": 2016,
+    "categoria": "Matemáticas",
+    "disponibilidad": true,
+    "descripcion": "Álgebra lineal con enfoque en aplicaciones prácticas."
+  },
+  {
+    "id": "12",
+    "titulo": "Física Universitaria",
+    "autor": "Hugh D. Young",
+    "isbn": "978-0-13-397135-1",
+    "anio": 2018,
+    "categoria": "Física",
+    "disponibilidad": true,
+    "descripcion": "Texto estándar de física universitaria, mecánica y termodinámica."
+  },
+  {
+    "id": "13",
+    "titulo": "Probabilidad y Estadística para Ingeniería",
+    "autor": "Jay L. Devore",
+    "isbn": "978-1-305-25180-9",
+    "anio": 2016,
+    "categoria": "Estadística",
+    "disponibilidad": true,
+    "descripcion": "Estadística aplicada a problemas de ingeniería y ciencias."
+  },
+  {
+    "id": "14",
+    "titulo": "La República",
+    "autor": "Platón",
+    "isbn": "978-84-376-0249-1",
+    "anio": 2000,
+    "categoria": "Filosofía",
+    "disponibilidad": true,
+    "descripcion": "Diálogo clásico sobre justicia, política y filosofía."
+  },
+  {
+    "id": "15",
+    "titulo": "Historia Universal",
+    "autor": "Felipe Fernández-Armesto",
+    "isbn": "978-0-13-193666-0",
+    "anio": 2010,
+    "categoria": "Historia",
+    "disponibilidad": false,
+    "descripcion": "Visión completa de la historia de la humanidad."
+  },
+  {
+    "id": "16",
+    "titulo": "Design Patterns",
+    "autor": "Gang of Four",
+    "isbn": "978-0-20-163361-5",
+    "anio": 1994,
+    "categoria": "Programación",
+    "disponibilidad": true,
+    "descripcion": "Patrones de diseño orientados a objetos fundamentales."
+  },
+  {
+    "id": "17",
+    "titulo": "Python Crash Course",
+    "autor": "Eric Matthes",
+    "isbn": "978-1-593-27928-8",
+    "anio": 2019,
+    "categoria": "Programación",
+    "disponibilidad": true,
+    "descripcion": "Introducción práctica a la programación con Python."
+  },
+  {
+    "id": "18",
+    "titulo": "Eloquent JavaScript",
+    "autor": "Marijn Haverbeke",
+    "isbn": "978-1-593-27950-9",
+    "anio": 2018,
+    "categoria": "Desarrollo Web",
+    "disponibilidad": false,
+    "descripcion": "Programación moderna con JavaScript, desde básico a avanzado."
+  },
+  {
+    "id": "19",
+    "titulo": "Estructura de Datos en Java",
+    "autor": "Mark Allen Weiss",
+    "isbn": "978-0-13-257627-7",
+    "anio": 2014,
+    "categoria": "Algoritmos y Estructuras",
+    "disponibilidad": true,
+    "descripcion": "Estructuras de datos clásicas implementadas en Java."
+  },
+  {
+    "id": "20",
+    "titulo": "Redes de Computadores y Internet",
+    "autor": "James F. Kurose",
+    "isbn": "978-0-13-359414-0",
+    "anio": 2017,
+    "categoria": "Redes",
+    "disponibilidad": true,
+    "descripcion": "Enfoque top-down para entender las redes modernas."
+  },
+  {
+    "id": "21",
+    "titulo": "Sistemas Operativos Modernos",
+    "autor": "Andrew S. Tanenbaum",
+    "isbn": "978-0-13-359162-0",
+    "anio": 2014,
+    "categoria": "Programación",
+    "disponibilidad": false,
+    "descripcion": "Principios y diseño de sistemas operativos."
+  },
+  {
+    "id": "22",
+    "titulo": "Filosofía de la Mente",
+    "autor": "Jaegwon Kim",
+    "isbn": "978-0-813-34458-8",
+    "anio": 2011,
+    "categoria": "Filosofía",
+    "disponibilidad": true,
+    "descripcion": "Introducción a los problemas centrales de la filosofía de la mente."
+  },
+  {
+    "id": "23",
+    "titulo": "Estadística Descriptiva e Inferencial",
+    "autor": "Mario F. Triola",
+    "isbn": "978-0-13-446805-7",
+    "anio": 2018,
+    "categoria": "Estadística",
+    "disponibilidad": true,
+    "descripcion": "Estadística elemental con ejemplos del mundo real."
+  },
+  {
+    "id": "24",
+    "titulo": "CSS: The Definitive Guide",
+    "autor": "Eric A. Meyer",
+    "isbn": "978-1-449-39319-9",
+    "anio": 2017,
+    "categoria": "Desarrollo Web",
+    "disponibilidad": true,
+    "descripcion": "Referencia completa de CSS para diseño web."
+  },
+  {
+    "id": "25",
+    "titulo": "Breve Historia del Tiempo",
+    "autor": "Stephen Hawking",
+    "isbn": "978-0-553-38016-3",
+    "anio": 1988,
+    "categoria": "Física",
+    "disponibilidad": true,
+    "descripcion": "Cosmología y física teórica para el público general."
+  }
+]
