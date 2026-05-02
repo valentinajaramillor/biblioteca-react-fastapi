@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from models import Libro, LibroCreate
 from database import cargar_datos, guardar_datos
-from algoritmos import merge_sort, busqueda_lineal, busqueda_binaria, arbol_categorias, contar_libros_categoria
+from algoritmos import merge_sort, busqueda_lineal, busqueda_binaria_isbn, arbol_categorias, contar_libros_categoria, bubble_sort
 from typing import Optional
 import uuid
 
@@ -10,7 +10,7 @@ app = FastAPI(title="Biblioteca API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:5173"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -36,9 +36,17 @@ def buscar_libros(texto: str = ""):
 def ordenar_libros(campo: str = "titulo", algoritmo: str = "merge"):
     libros = cargar_datos()
     campos_validos = ["titulo", "autor", "anio", "disponibilidad"]
+    algoritmos_validos = ["merge", "bubble"]
+
     if campo not in campos_validos:
         raise HTTPException(status_code=400, detail=f"Campo inválido. Usa: {campos_validos}")
-    return merge_sort(libros, campo)
+    if algoritmo not in algoritmos_validos:
+        raise HTTPException(status_code=400, detail=f"Algoritmo inválido. Usa: {algoritmos_validos}")
+
+    if algoritmo == "merge":
+        return merge_sort(libros, campo)
+    else:
+        return bubble_sort(libros, campo)
 
 
 @app.get("/libros/{libro_id}")

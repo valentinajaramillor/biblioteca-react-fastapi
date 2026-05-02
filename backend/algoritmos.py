@@ -31,6 +31,22 @@ def _merge(izq: list, der: list, campo: str) -> list:
     resultado.extend(der[j:])
     return resultado
 
+# ─── BUBBLE SORT ───────────────────────────────────────────────────────────
+
+def bubble_sort(libros: list, campo: str) -> list:
+    resultado = [libro for libro in libros]  # copia para no modificar el original
+    n = len(resultado)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            val_izq = resultado[j][campo]
+            val_der = resultado[j + 1][campo]
+            if isinstance(val_izq, str):
+                val_izq = val_izq.lower()
+                val_der = val_der.lower()
+            if val_izq > val_der:
+                resultado[j], resultado[j + 1] = resultado[j + 1], resultado[j]
+    return resultado
+
 
 # ─── BÚSQUEDA LINEAL ───────────────────────────────────────────────────────────
 
