@@ -78,7 +78,7 @@ export default function Catalogo({ onEditar }) {
       <div className="controles">
         <input
           type="text"
-          placeholder="🔍 Buscar por título, autor, ISBN o categoría..."
+          placeholder="Buscar por título, autor, ISBN o categoría..."
           value={busqueda}
           onChange={handleBuscar}
           className="barra-busqueda"

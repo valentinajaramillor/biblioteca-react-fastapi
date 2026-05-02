@@ -1,4 +1,4 @@
-# 📚 Biblioteca Académica
+# Biblioteca Académica
 
 Sistema web para gestión y consulta del catálogo de una biblioteca universitaria. Permite registrar, buscar, ordenar y explorar libros académicos mediante una interfaz en React y una API en FastAPI.
 
